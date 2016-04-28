@@ -9,7 +9,7 @@ Based on mod_remoteip.c and mod_cloudflare.c , this Apache module  will replace 
 
 To install
    ```bash
-   wget https://github.com/mcl21us/mod_reverseproxy/blob/master/mod_reverseproxy.c
+   wget https://raw.github.com/mcl21us/mod_reverseproxy/master/mod_reverseproxy.c
    apxs -i -c -n mod_reverseproxy.so mod_reverseproxy.c  
    ```
 ## Configuration Directives ##
