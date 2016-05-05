@@ -22,6 +22,7 @@ ReverseProxyRemoteIPTrusted  127.0.0.1         -  What IPs to adjust requests fo
 ```
 
 ## Example Configuration ##
+WHM --> Apache Configuration --> Include Editor (OPEN Pre Main Include and add the ff line  add your server IP's after ReverseProxyRemoteIPTrusted xxx.xxx.xxx.xxx)
 ```bash
 
 LoadModule reverseproxy_module modules/mod_reverseproxy.so
@@ -30,7 +31,8 @@ LoadModule reverseproxy_module modules/mod_reverseproxy.so
   ReverseProxyEnable  On
   ReverseProxyRemoteIPHeader X-Real-IP
   ReverseProxyRemoteIPTrusted 127.0.0.1
-  ReverseProxyRemoteIPTrusted 46.105.160.192
+  ReverseProxyRemoteIPTrusted 46.xxx.xxx.192
+  ReverseProxyRemoteIPTrusted (Server IP's)
 </IfModule>
 
 ```
